@@ -3,7 +3,7 @@
 function dbConnect (){
  	$conn =	null;
  	$host = 'localhost';
- 	$db = 	'library';
+ 	$db = 	'bookit';
  	$user = 'root';
  	$pwd = 	'';
 	try {
