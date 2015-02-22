@@ -27,7 +27,7 @@
 			$statement = $conn->prepare($insert_book);
 			$results = $statement->execute();
 			
-			$insert_author = "INSERT INTO BOOKAUTHOR(ISBN,AuthorName) values ('$ISBN','$author1')";
+			$insert_author = "INSERT INTO AUTHOR(ISBN,AuthorName) values ('$ISBN','$author1')";
 			$statement1 = $conn->prepare($insert_author );
 			$results = $statement1->execute();
 			
