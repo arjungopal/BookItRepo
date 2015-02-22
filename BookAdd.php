@@ -59,7 +59,7 @@
 				<select id = "category" name="category">
 				<option>Select a Category</option>
 				<?php 
-				$query1 = "SELECT CategoryId,Name FROM bookcategory ";
+				$query1 = "SELECT CategoryId,Name FROM category ";
 				foreach ($conn->query($query1) as $row) 
 				{ ?>  
 				<option value="<?php echo $row['CategoryId'];?>"><?php echo $row['Name']; ?>
