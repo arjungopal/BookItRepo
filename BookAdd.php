@@ -1,6 +1,11 @@
 <html>
 <head>
 <title>Add New Books</title>
+	<script>
+	
+	
+	
+	</script>
 </head>
 <body>
 <center>
@@ -36,7 +41,32 @@
 				Enter Author
 			</td>
 			<td>
-				<input type = "text" id = "author" name="author" placeholder= "Enter Author"/>
+				<input type = "text" id = "author1" name="author" placeholder= "Enter Author"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Enter another Author
+			</td>
+			<td>
+				<input type = "text" id = "author2" name="year" placeholder= "optional"/>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Enter another Author
+			</td>
+			<td>
+				<input type = "text" id = "author3" name="year" placeholder= "optional"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Enter another Author
+			</td>
+			<td>
+				<input type = "text" id = "author4" name="year" placeholder= "optional"/>
 			</td>
 		</tr>
 		<tr>
