@@ -15,6 +15,9 @@
 		$category = $_POST['category'];
 		$copies = $_POST['copies'];
 		$author1= $_POST['author'];
+		$author2= $_POST['author2'];
+		$author3= $_POST['author3'];
+		$author4= $_POST['author4'];
 		
 		$query = "select * from book where isbn ='".$ISBN."'";
 		$statement = $conn->prepare ( $query );
@@ -30,6 +33,26 @@
 			$insert_author = "INSERT INTO AUTHOR(ISBN,AuthorName) values ('$ISBN','$author1')";
 			$statement1 = $conn->prepare($insert_author );
 			$results = $statement1->execute();
+			if($author2!="")
+			{
+				$author_sql = "INSERT INTO BOOKAUTHOR(ISBN,AuthorName) values ('$ISBN','$author2')";
+				$stmt = $conn->prepare($author_sql);
+				$results = $stmt->execute();
+			}
+			
+			if($author3!="")
+			{
+				$author_sql = "INSERT INTO BOOKAUTHOR(ISBN,AuthorName) values ('$ISBN','$author3')";
+				$stmt = $conn->prepare($author_sql);
+				$results = $stmt->execute();
+			}
+			
+			if($author4!="")
+			{
+				$author_sql = "INSERT INTO BOOKAUTHOR(ISBN,AuthorName) values ('$ISBN','$author4')";
+				$stmt = $conn->prepare($author_sql);
+				$results = $stmt->execute();
+			}
 			
 			$result = true;
 
